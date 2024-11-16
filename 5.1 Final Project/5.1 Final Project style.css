@@ -1,0 +1,181 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Root Variables */
+  :root {
+    --primary-color: #FFC1CC; /* Light Pink */
+    --secondary-color: #FFDDE5; /* Softer Pink */
+    --background-color: #FFF5F8; /* Pale Pink */
+    --text-color: #6D214F; /* Deep Wine */
+    --accent-color: #F8BFD3; /* Pink Accent */
+    --transition-speed: 0.4s;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 1.8;
+    overflow-x: hidden;
+    padding: 20px;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  /* Links */
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid var(--accent-color);
+    transition: color var(--transition-speed), border-color var(--transition-speed);
+  }
+  
+  a:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  /* Buttons */
+  button {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background var(--transition-speed), transform var(--transition-speed);
+  }
+  
+  button:hover {
+    background: var(--text-color);
+    transform: scale(1.1);
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: var(--primary-color);
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+  .navbar a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 1rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    border-radius: 15px;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Fancy Cards */
+  .card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    margin: 20px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid var(--accent-color);
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .card-content p {
+    color: var(--text-color);
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .card {
+      margin: 10px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  
